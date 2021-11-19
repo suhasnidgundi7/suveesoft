@@ -23,21 +23,21 @@ export const Services = () => {
                         </div>                        
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                             <div className="icon-box align-self-center">
-                                <div className="icon"><i className="bi bi-eye-fill"></i></div>
+                                <div className="icon"><i class="bi bi-laptop-fill"></i></div>
                                 <h3>Responsive</h3>
                                 {/* <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> */}
                             </div>
                         </div>                        
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                             <div className="icon-box align-self-center">
-                                <div className="icon"><i className="bi bi-eye-fill"></i></div>
+                                <div className="icon"><i class="bi bi-bar-chart-fill"></i></div>
                                 <h3>SEO Optimization</h3>
                                 {/* <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> */}
                             </div>
                         </div>                        
                         <div className="col-xl-3 col-md-6 d-flex align-items-stretch justify-content-center" data-aos="zoom-in" data-aos-delay="100">
                             <div className="icon-box align-self-center">
-                                <div className="icon"><i className="bi bi-eye-fill"></i></div>
+                                <div className="icon"><i class="bi bi-hdd-stack-fill"></i></div>
                                 <h3>Faster</h3>
                                 {/* <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p> */}
                             </div>
