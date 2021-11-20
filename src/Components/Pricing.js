@@ -19,10 +19,10 @@ export const Pricing = () => {
                                 <h3>Free</h3>
                                 <h4><sup>₹</sup></h4>
                                 <ul style={{ textAlign: 'left' }}>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
                                 </ul>
 
                             </div>
@@ -33,10 +33,10 @@ export const Pricing = () => {
                                 <h3>Business</h3>
                                 <h4><sup>₹</sup></h4>
                                 <ul style={{ textAlign: 'left' }}>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
                                 </ul>
 
                             </div>
@@ -47,10 +47,10 @@ export const Pricing = () => {
                                 <h3>Developer</h3>
                                 <h4><sup>₹</sup></h4>
                                 <ul style={{ textAlign: 'left' }}>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
                                 </ul>
                             </div>
                         </div>
@@ -61,10 +61,10 @@ export const Pricing = () => {
                                 <h3>Ultimate</h3>
                                 <h4><sup>₹</sup></h4>
                                 <ul style={{ textAlign: 'left' }}>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
-                                    <li><i class="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
+                                    <li><i className="bi bi-arrow-right-circle-fill"></i>&ensp;Massa ultricies mi</li>
                                 </ul>
                             </div>
                         </div>

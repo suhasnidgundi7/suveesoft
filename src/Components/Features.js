@@ -1,6 +1,25 @@
 import React from 'react'
 
 export const Features = () => {
+
+    const FeatureData = [
+        {
+            'data': 'Android / IOS',
+            'icon': 'phone-fill',
+            'description': 'Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones'
+        },
+        {
+            'data': 'PHP / Python / React JS',
+            'icon': 'code-slash',
+            'description': 'Software development is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components.'
+        },
+        {
+            'data': 'Landing Page Development',
+            'icon': 'window',
+            'description': 'Landing pages always have two crystal-clear objectives: to promote a specific product or service and to influence as many visitors as possible to become leads.'
+        },
+    ]
+
     return (
         <>
             {/* <!-- ======= Features Section ======= --> */}
@@ -16,21 +35,17 @@ export const Features = () => {
 
                     <div className="row">
                         <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
-                            <div className="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-                                <i className="bi bi-phone-fill"></i>
-                                <h4>Android / IOS</h4>
-                                <p>Mobile app development is the act or process by which a mobile app is developed for mobile devices, such as personal digital assistants, enterprise digital assistants or mobile phones</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-                                <i className="bi bi-code-slash"></i>
-                                <h4>PHP / Python / React JS</h4>
-                                <p>Software development is the process of conceiving, specifying, designing, programming, documenting, testing, and bug fixing involved in creating and maintaining applications, frameworks, or other software components.</p>
-                            </div>
-                            <div className="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
-                                <i className="bi bi-window"></i>
-                                <h4>Landing Page Development</h4>
-                                <p>Landing pages always have two crystal-clear objectives: to promote a specific product or service and to influence as many visitors as possible to become leads.</p>
-                            </div>
+                            {
+                                FeatureData.map((item, i) => {
+                                    return (
+                                        <div className="icon-box mt-5" data-aos="fade-up" data-aos-delay="200" key={i}>
+                                            <i className={`bi bi-${item.icon}`}></i>
+                                            <h4>{item.data}</h4>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    )
+                                })
+                            }
                         </div>
                         <div className="image col-lg-6 order-1 order-lg-2 " data-aos="zoom-in" data-aos-delay="100">
                             <img src="assets/img/features.svg" alt="" className="img-fluid" />

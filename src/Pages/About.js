@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import { Counts } from '../Components/Counts'
 
 export const About = () => {
@@ -10,7 +11,7 @@ export const About = () => {
 
                     <div className="row">
                     <div className="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-                        <img src="assets/img/about.jpg" className="img-fluid" alt=""/>
+                        <LazyLoadImage src="assets/img/about.jpg" className="img-fluid" alt="About Suveesoft" effect="blur" width="100%" height="100%" />
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h3>Suveesoft combines passion and innovation to bring real value to customers’ business.</h3>

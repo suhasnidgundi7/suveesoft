@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export const Home = () => {
 
@@ -15,9 +16,7 @@ export const Home = () => {
                             <div><a href="#about" className="btn-get-started scrollto">Learn More</a></div>
                         </div>
                         <div className="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-                            <picture>
-                                <img src="assets/img/hero-img.png" className="img-fluid animated" alt="" />
-                            </picture>
+                            <LazyLoadImage src="assets/img/hero-img.png" className="img-fluid animated" alt="Information Technology" effect='blur' width="100%" height="100%" />
                         </div>
                     </div>
                 </div>

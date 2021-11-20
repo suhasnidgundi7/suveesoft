@@ -1,7 +1,47 @@
 import React from 'react'
-import { Pricing } from '../Components/Pricing'
+import { LazyLoadComponent, LazyLoadImage } from 'react-lazy-load-image-component'
 
 export const Portfolio = () => {
+
+    const PortfolioData = [
+        {
+            'ProjectName': 'Akkalkot Samarth News Media',
+            'ProjectWebsite': 'https://akkalkotsamarth.in/',
+            'ProjectImage': 'assets/img/portfolio/akkalkotsamarth_in.png',
+            'ProjectAlt': 'News Media'
+        },
+        {
+            'ProjectName': 'CTE SOCIETY COLLEGE OF EDUCATION ( B. Ed. )',
+            'ProjectWebsite': 'https://ctesbed.in/',
+            'ProjectImage': 'assets/img/portfolio/ctesbed_in.png',
+            'ProjectAlt': 'Education Society'
+        },
+        {
+            'ProjectName': 'HKDET Dental College Hospital and Research Institute',
+            'ProjectWebsite': 'https://hkdetdentalcollege.in/',
+            'ProjectImage': 'assets/img/portfolio/hkdetdentalcollege_in.png',
+            'ProjectAlt': 'Hospital and Research Institute'
+        },
+        {
+            'ProjectName': 'James Auto',
+            'ProjectWebsite': 'https://jamesauto.in/',
+            'ProjectImage': 'assets/img/portfolio/jamesauto_in.png',
+            'ProjectAlt': 'Automobile'
+        },
+        {
+            'ProjectName': 'Rajarajeshwari Ayurvedic Medical College and Hospital',
+            'ProjectWebsite': 'https://rramc.org/',
+            'ProjectImage': 'assets/img/portfolio/rramc_org.png',
+            'ProjectAlt': 'Medical College and Hospital'
+        },
+        {
+            'ProjectName': 'Bahubali Vidyapeeth - Bahubali Vidyapeeth',
+            'ProjectWebsite': 'https://bahubali.org/',
+            'ProjectImage': 'assets/img/portfolio/bahubali_org.png',
+            'ProjectAlt': 'Vidyapeeth'
+        },
+    ]
+
     return (
         <>
             {/* <!-- ======= Portfolio Section ======= --> */}
@@ -15,86 +55,34 @@ export const Portfolio = () => {
 
                     <div className="row portfolio-container">
 
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div className="portfolio-wrap">
-                                <img src="assets/img/portfolio/akkalkotsamarth_in.png" className="img-fluid" alt="" />
-                                <div className="portfolio-info">
-                                    <h4>akkalkot Samarth News Media</h4>
-                                </div>
-                                <div className="portfolio-links">
-                                    <a href="https://akkalkotsamarth.in/" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                        {
+                            PortfolioData.map((item, i) => {
+                                return (
+                                    <div key={i}>
+                                        <div className="col-lg-4 col-md-6 p-3 portfolio-item filter-card">
+                                            <div className="portfolio-wrap">
+                                                <LazyLoadComponent>
+                                                    <LazyLoadImage src={item.ProjectImage} className="img-fluid" alt={item.ProjectAlt} width="100%" height="100%" />
+                                                    <div className="portfolio-info">
+                                                        <h4>{item.ProjectName}</h4>
+                                                    </div>
+                                                    <div className="portfolio-links">
+                                                        <a href={item.ProjectWebsite} title="More Details"><i className="bx bx-link"></i></a>
+                                                    </div>
+                                                </LazyLoadComponent>
+                                            </div>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        }
 
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div className="portfolio-wrap">
-                                <img src="assets/img/portfolio/ctesbed_in.png" className="img-fluid" alt="" />
-                                <div className="portfolio-info">
-                                    <h4>CTE SOCIETY'S COLLEGE OF EDUCATION ( B. Ed. )
-                                    </h4>
-                                </div>
-                                <div className="portfolio-links">
-                                    <a href="https://ctesbed.in/" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div className="portfolio-wrap">
-                                <img src="assets/img/portfolio/hkdetdentalcollege_in.png" className="img-fluid" alt="" />
-                                <div className="portfolio-info">
-                                    <h4>HKDET'S Dental College Hospital and Research Institute</h4>
-                                </div>
-                                <div className="portfolio-links">
-                                    <a href="https://hkdetdentalcollege.in/" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div className="portfolio-wrap">
-                                <img src="assets/img/portfolio/jamesauto_in.png" className="img-fluid" alt="" />
-                                <div className="portfolio-info">
-                                    <h4>James Auto</h4>
-                                </div>
-                                <div className="portfolio-links">
-                                    <a href="https://jamesauto.in/" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div className="portfolio-wrap">
-                                <img src="assets/img/portfolio/rramc_org.png" className="img-fluid" alt="" />
-                                <div className="portfolio-info">
-                                    <h4>Rajarajeshwari Ayurvedic Medical College and Hospital</h4>
-                                </div>
-                                <div className="portfolio-links">
-                                    <a href="https://rramc.org/" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <div className="portfolio-wrap">
-                                <img src="assets/img/portfolio/bahubali_org.png" className="img-fluid" alt="" />
-                                <div className="portfolio-info">
-                                    <h4>bahubali Vidyapeeth - Bahubali Vidyapeeth</h4>
-                                </div>
-                                <div className="portfolio-links">
-                                    <a href="https://bahubali.org/" title="More Details"><i className="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
 
                 </div>
             </section>
             {/* <!-- End Portfolio Section -->                */}
-
-            {/* <Pricing /> */}
 
         </>
     )
