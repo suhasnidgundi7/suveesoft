@@ -1,5 +1,4 @@
 import React from 'react'
-import { LazyLoadComponent, LazyLoadImage } from 'react-lazy-load-image-component'
 
 export const Portfolio = () => {
 
@@ -61,15 +60,13 @@ export const Portfolio = () => {
                                     <div key={i}>
                                         <div className="col-lg-4 col-md-6 p-3 portfolio-item filter-card">
                                             <div className="portfolio-wrap">
-                                                <LazyLoadComponent>
-                                                    <LazyLoadImage src={item.ProjectImage} className="img-fluid" alt={item.ProjectAlt} width="100%" height="100%" />
-                                                    <div className="portfolio-info">
-                                                        <h4>{item.ProjectName}</h4>
-                                                    </div>
-                                                    <div className="portfolio-links">
-                                                        <a href={item.ProjectWebsite} title="More Details"><i className="bx bx-link"></i></a>
-                                                    </div>
-                                                </LazyLoadComponent>
+                                                <img src={item.ProjectImage} className="img-fluid" alt={item.ProjectAlt} width="100%" height="100%" />
+                                                <div className="portfolio-info">
+                                                    <h4>{item.ProjectName}</h4>
+                                                </div>
+                                                <div className="portfolio-links">
+                                                    <a href={item.ProjectWebsite} title="Visit Now"><i className="bx bx-link"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
